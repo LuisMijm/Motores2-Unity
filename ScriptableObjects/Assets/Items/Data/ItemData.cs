@@ -9,7 +9,7 @@ public class ItemData : ScriptableObject
     public int Scale_;
 
 
-    public virtual void Use(InventoryController inventory)
+    public virtual void Use(InventoryController inventory, Charactercontroller character)
     {
 
     }

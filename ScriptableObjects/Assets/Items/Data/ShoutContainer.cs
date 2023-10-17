@@ -7,7 +7,7 @@ public class ShoutContainer : ItemData
 {
     public string ShoutMessage_;
 
-    public override void Use(InventoryController inventory)
+    public override void Use(InventoryController inventory, Charactercontroller character)
     {
         Debug.Log(ShoutMessage_);
     }

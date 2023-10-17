@@ -9,6 +9,12 @@ public class InventoryController : MonoBehaviour
     private List<ItemData> ItemList_;
     //public KeyCode UseAction_;
 
+    public Charactercontroller characterController_;
+
+    public ItemData healSkill_;
+    public ItemData fireballSkill_;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +37,21 @@ public class InventoryController : MonoBehaviour
         {
             if(ItemList_.Count != 0)
             {
-                ItemList_[0].Use(this);
+                ItemList_[0].Use(this, characterController_);
             }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            fireballSkill_.Use(this, characterController_);
+        }
+        
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            // GameObject goItemDrop = ItemList_[currentItems - 1].ItemPrefab_;
+            // GameObject healSkill_ = GameObject.Instantiate<GameObject>(GameObject.ItemPrefab_);
+            // if (go == null) return false;
+            healSkill_.Use(this, characterController_);
         }
     }
 

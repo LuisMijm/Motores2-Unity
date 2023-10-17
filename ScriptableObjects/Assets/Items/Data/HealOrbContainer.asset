@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106d047de3884544ab546be6720be871, type: 3}
-  m_Name: FireballData
+  m_Script: {fileID: 11500000, guid: 78baf58f2d6e8cd459c837aae67e2b9e, type: 3}
+  m_Name: HealOrbContainer
   m_EditorClassIdentifier: 
   ItemPrefab_: {fileID: 1361992889091589516, guid: e0634d78c7090b947a5beeb2707ce2f6, type: 3}
-  Scale_: 1
-  minDamage_: 25
-  maxDamage_: 50
-  selfDestructTimer_: 0
+  Scale_: 0
+  minHeal_: 10
+  maxHeal_: 25
+  selfDestructTimer_: 10

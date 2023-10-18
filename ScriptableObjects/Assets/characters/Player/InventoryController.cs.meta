@@ -3,7 +3,10 @@ guid: dbd30b55d828c6a43a17ab9e2a489269
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - characterController_: {instanceID: 0}
+  - healSkill_: {fileID: 11400000, guid: d8e4db7beca95934cb3a77124e5b161e, type: 2}
+  - fireballSkill_: {fileID: 11400000, guid: 874643313b87f664f9b4d6107107d81d, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
